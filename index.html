@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conveyor Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-overlay">
+            <h1>Conveyor Tetris</h1>
+            <p>Score: <span id="score">0</span></p>
+            <p>Lines: <span id="lines">0</span></p>
+            <p>Level: <span id="level">1</span></p>
+            <p>Locked Blocks: <span id="lock-count">0</span></p>
+            <div id="instructions">
+                <h2>Controls</h2>
+                <p>Arrow Left/Right: Move</p>
+                <p>Arrow Up: Rotate (Counter-Clockwise)</p>
+                <p>Arrow Down: Soft Drop</p>
+                <p>Space: Hard Drop</p>
+            </div>
+            <button id="start-btn">Start Game</button>
+        </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
