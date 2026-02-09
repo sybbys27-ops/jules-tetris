@@ -1,6 +1,6 @@
 import { Board } from './board.js';
 import { Tetromino } from './tetromino.js';
-import { KEY, CONVEYOR_TRIGGER_COUNT, ROWS, COLS, STATE, CONVEYOR_DURATION } from './constants.js';
+import { KEY, CONVEYOR_TRIGGER_COUNT, ROWS, COLS, STATE, CONVEYOR_DURATION, CONVEYOR_MOVE_DISTANCE } from './constants.js';
 
 export class Game {
     constructor(renderer) {
