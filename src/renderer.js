@@ -5,9 +5,11 @@ export class Renderer {
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d');
 
-        // Set canvas size in pixels
-        this.ctx.canvas.width = COLS * BLOCK_SIZE;
-        this.ctx.canvas.height = ROWS * BLOCK_SIZE;
+        // Ensure canvas size is correct
+        if (this.canvas.width !== COLS * BLOCK_SIZE || this.canvas.height !== ROWS * BLOCK_SIZE) {
+            this.canvas.width = COLS * BLOCK_SIZE;
+            this.canvas.height = ROWS * BLOCK_SIZE;
+        }
 
         // Scale coordinate system to block units
         this.ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
